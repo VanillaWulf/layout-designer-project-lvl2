@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #08020D;
+}
+
+.container {
+  margin: 0 120px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-flex-adaptive {
+  display: flex;
+}
+
+.col-3 {
+  width: calc(33% - 48px);
+}
+
+.header-text {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.header-level-two {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.header-level-three {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.text-size-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.padding-bottom-46 {
+  padding-bottom: 46px;
+}
+
+.padding-bottom-48 {
+  padding-bottom: 48px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+
+.padding-vertical-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 21px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.white-button {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background-color: transparent;
+}
+
+.dark-gray-button {
+  color: #CACACA;
+  border: 1px solid #CACACA;
+  background-color: transparent;
+}
+
+.green-background-button {
+  color: #FFF;
+  background-color: #34C176;
+  border: none;
+}
+
+.header {
+  position: absolute;
+  padding: 25px 0 0;
+}
+
+.header .header__img {
+  margin: 0 13px 0 0;
+}
+
+.header .header__search {
+  padding: 5px 10px;
+  background-color: #3C3B3D;
+  border-radius: 50px;
+  border: none;
+}
+
+.main-banner {
+  padding: 200px 0 0 0;
+  width: 100%;
+  min-height: 713px;
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.pricing .pricing-first-item {
+  background-image: url(../images/subscribe_1.png);
+}
+
+.pricing .pricing-second-item {
+  background-image: url(../images/subscribe_2.png);
+}
+
+.pricing .pricing-third-item {
+  background-image: url(../images/subscribe_3.png);
+}
+
+.footer {
+  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+}
+/*# sourceMappingURL=style.css.map */

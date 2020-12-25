@@ -1,0 +1,15 @@
+.header {
+    position: absolute;
+    padding: 25px 0 0;
+
+    .header__img {
+        margin: 0 13px 0 0;
+    }
+
+    .header__search {
+        padding: 5px 10px;
+        background-color: $dark-color;
+        border-radius: 50px;
+        border: none;
+    }
+}
