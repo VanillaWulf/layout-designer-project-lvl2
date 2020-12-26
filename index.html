@@ -29,59 +29,91 @@
     </div>
 </header>
 <main>
-    <section class="main-banner" id="page-description">
+    <section class="main-banner text-center" id="page-description">
         <div class="main-banner__container">
-        <h1 class="header-text text-center">Онлайн музыка где угодно</h1>
-        <h2 class="header-level-two text-center">Без ограничений</h2>
-        <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        <form action="/">
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="Email">
-            <button type="submit" class="button green-background-button">Получить доступ</button>
-        </form>
+            <h1 class="header-text">Онлайн музыка где угодно</h1>
+            <h2 class="header-level-two">Без ограничений</h2>
+            <p class="margin-bottom-16">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир
+                музыки</p>
+            <form action="/" method="POST" class="main-banner__form">
+                <div class="display-flex justify-content-space-between margin-bottom-24">
+                    <input type="text" placeholder="Имя" class="input">
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <button type="submit" class="button green-background-button width-100">Получить доступ</button>
+            </form>
     </section>
     <section class="pricing padding-top-100 container text-center" id="page-pricing">
-        <h2 class="header-level-two uppercase padding-bottom-46">Формы подписки</h2>
-        <ul class="display-flex-adaptive"> 
-            <li class="col-3 pricing-first-item">
-                <h3 class="header-level-three uppercase text-center">Бесплатная</h3>
-                <p>0</p>
-                <button class="button white-button" type="button">Оформить</button>
+        <h2 class="header-level-two uppercase margin-bottom-48">Формы подписки</h2>
+        <ul class="display-flex-adaptive justify-content-space-between margin-bottom-39">
+            <li class="col-3 price-item pricing-first-item">
+                <h3 class="header-level-three uppercase text-center margin-bottom-180">Бесплатная</h3>
+                <p class="text-size-64 uppercase margin-bottom-24">0 <span
+                        class="text-size-32 vertical-align-super">руб</span></p>
+                <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
+                <p>Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама
+                </p>
             </li>
-            <li class="col-3 pricing-second-item">
-                <h3 class="header-level-three uppercase">Стандартная</h3>
-                <p>250</p>
-                <button class="button white-button" type="button">Оформить</button>
+            <li class="col-3 price-item pricing-second-item">
+                <h3 class="header-level-three uppercase margin-bottom-180">Стандартная</h3>
+                <p class="text-size-64 uppercase margin-bottom-24">250 <span
+                        class="text-size-32 vertical-align-super">руб</span></p>
+                <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
+                <p>Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+                </p>
             </li>
-            <li class="col-3 pricing-third-item">
-                <h3 class="header-level-three uppercase">Премиум</h3>
-                <p>500</p>
-                <button class="button white-button" type="button">Оформить</button>
+            <li class="col-3 price-item pricing-third-item">
+                <h3 class="header-level-three uppercase margin-bottom-180">Премиум</h3>
+                <p class="text-size-64 uppercase margin-bottom-24">500 <span
+                        class="text-size-32 vertical-align-super">руб</span></p>
+                <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
+                <p>Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
             </li>
         </ul>
-        <p>На всех тарифах возможно прослушивание музыки с мобильных устройств. 
-            На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        <p>На всех тарифах возможно прослушивание музыки с мобильных устройств.
+            На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к
+            интернету</p>
     </section>
-    <section class="padding-top-100 container">
-        <h2 class="header-level-two uppercase padding-bottom-48 text-center">Последние новости</h2>
+    <section class="padding-top-100 container" id="page-news">
+        <h2 class="header-level-two uppercase margin-bottom-48 text-center">Последние новости</h2>
         <ul>
             <li class="display-flex-adaptive">
                 <img src="./images/Music to Be Murdered By.png" alt="music to be murdered">
-                <p>Music to Be Murdered By</p>
-                <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+                <div>
+                    <p>Music to Be Murdered By</p>
+                    <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт
+                        20
+                        новых треков.</p>
+                </div>
             </li>
             <li class="display-flex-adaptive">
 
             </li>
         </ul>
     </section>
-    <section class="padding-vertical-100 container">
+    <section class="padding-vertical-100 container" id="page-app">
         <h2 class="header-level-two uppercase padding-bottom-48 text-center">Мобильное приложение</h2>
+        <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе
+            операционных систем Androind и iOS</p>
+        <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать
+            музыку даже без интернета.</p>
+        <button>Скачать</button>
     </section>
 </main>
 <footer class="footer">
     <nav>
-        
+        <ul>
+            <li>
+                <h2>О нас
+                </h2>
+                <ul>
+                    <li><a href="#">История компании</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Особенности</a></li>
+                    <li><a href="#">Пресса</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 </footer>
 

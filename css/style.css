@@ -14,7 +14,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -56,19 +55,38 @@ body {
 }
 
 .container {
-  margin: 0 120px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .display-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .display-flex-adaptive {
   display: flex;
 }
 
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
 .col-3 {
   width: calc(33% - 48px);
+}
+
+.input {
+  background-color: transparent;
+  padding: 16px 24px;
+  width: calc(50% - 24px);
+  border: 2px solid #FFF;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .header-text {
@@ -97,8 +115,22 @@ body {
   line-height: 24px;
 }
 
+.text-size-32 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text-size-64 {
+  font-size: 64px;
+  line-height: 96px;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.vertical-align-super {
+  vertical-align: super;
 }
 
 .text-center {
@@ -124,6 +156,30 @@ body {
 .padding-vertical-100 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.margin-bottom-39 {
+  margin-bottom: 39px;
+}
+
+.margin-bottom-48 {
+  margin-bottom: 48px;
+}
+
+.margin-bottom-64 {
+  margin-bottom: 64px;
+}
+
+.margin-bottom-180 {
+  margin-bottom: 180px;
 }
 
 .transparent {
@@ -180,16 +236,27 @@ body {
   box-sizing: border-box;
 }
 
-.pricing .pricing-first-item {
+.main-banner .main-banner__form {
+  width: 47%;
+  margin: 0 auto;
+}
+
+.pricing .price-item:nth-of-type(1) {
   background-image: url(../images/subscribe_1.png);
 }
 
-.pricing .pricing-second-item {
+.pricing .price-item:nth-of-type(2) {
   background-image: url(../images/subscribe_2.png);
 }
 
-.pricing .pricing-third-item {
+.pricing .price-item:nth-of-type(3) {
   background-image: url(../images/subscribe_3.png);
+}
+
+.pricing .price-item {
+  padding: 24px 22px 66px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {

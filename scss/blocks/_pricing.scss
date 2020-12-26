@@ -1,15 +1,28 @@
 .pricing {
-    
-    .pricing-first-item {
-        background-image: url(../images/subscribe_1.png);
+
+
+    @for $i from 1 through 3 {
+        .price-item:nth-of-type(#{$i}) {
+            background-image: url(../images/subscribe_#{$i}.png);
+        }
     }
 
-    .pricing-second-item {
-        background-image: url(../images/subscribe_2.png);
+    .price-item {
+        padding: 24px 22px 66px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    .pricing-third-item {
-        background-image: url(../images/subscribe_3.png);
-    }
+    // .pricing-item {
+    //     background-image: url(../images/subscribe_1.png);
+    // }
+
+    // .pricing-second-item {
+    //     background-image: url(../images/subscribe_2.png);
+    // }
+
+    // .pricing-third-item {
+    //     background-image: url(../images/subscribe_3.png);
+    // }
 
 }

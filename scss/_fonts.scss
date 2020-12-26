@@ -19,14 +19,27 @@
     line-height: 45px;
 }
 
-
 .text-size-16 {
     font-size: 16px;
     line-height: 24px;
 }
 
+.text-size-32 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.text-size-64 {
+    font-size: 64px;
+    line-height: 96px;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.vertical-align-super {
+    vertical-align: super;
 }
 
 .text-center {

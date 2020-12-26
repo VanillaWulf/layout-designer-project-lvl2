@@ -14,7 +14,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -50,17 +49,36 @@ body {
 }
 
 .container {
-    margin: 0 120px;
+	width: 86%;
+    margin: 0 auto;
+}
+
+.width-100 {
+	width: 100%;
 }
 
 .display-flex {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .display-flex-adaptive {
     display: flex;
 }
 
+.justify-content-space-between {
+	justify-content: space-between;
+}
+
 .col-3 {
     width: calc(33% - 48px);
+}
+
+.input {
+	background-color: transparent;
+	padding: 16px 24px;
+	width: calc(50% - 24px);
+	border: 2px solid $white-color;
+	border-radius: 3px;
+	box-sizing: border-box;
 }
