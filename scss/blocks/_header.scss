@@ -5,6 +5,10 @@
 
     .header__img {
         margin: 0 13px 0 0;
+
+        @include tablet {
+            margin: 0 13px 15px 0;
+        }
     }
 
     .header__search {
@@ -12,5 +16,15 @@
         background-color: $dark-color;
         border-radius: 50px;
         border: none;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .header__navigation-list {
+        @include tablet {
+            margin: 0 0 18px;
+        }
     }
 }

@@ -6,8 +6,17 @@
     background-repeat: no-repeat;
     box-sizing: border-box;
 
+    @include mobile {
+        min-height: 862px;
+        padding: 250px 20px 0 20px;
+    }
+
     .main-banner__form {
         width: 47%;
         margin: 0 auto;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 }

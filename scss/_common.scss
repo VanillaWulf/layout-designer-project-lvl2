@@ -53,13 +53,15 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $white-color;
     font-size: 16px;
-    line-height: 24px;
+	line-height: 24px;
+	font-style: normal;
+	font-weight: normal;
     background-color: $black-color;
 }
 
 .container {
 	width: 86%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .width-100 {
@@ -76,20 +78,45 @@ body {
 	flex-wrap: wrap;
 }
 
+
+.display-flex-mobile-only {
+	display: flex;
+	
+	@include mobile {
+		flex-direction: column;
+	}
+}
+
 .display-flex-adaptive {
-    display: flex;
+	display: flex;
+	
+	@include tablet {
+		flex-direction: column;
+	}
 }
 
 .justify-content-space-between {
 	justify-content: space-between;
 }
 
-.col-2 {
-	width: calc(50% - 25px);
+.flex-grow-1 {
+	flex-grow: 1;
 }
 
-.col-3 {
-    width: calc(33% - 48px);
+.col-2-adaptive {
+	width: calc(50% - 25px);
+
+	@include tablet {
+		width: 100%;
+	}
+}
+
+.col-3-adaptive {
+	width: calc(33% - 48px);
+
+	@include tablet {
+		width: 100%;
+	}
 }
 
 .input {
@@ -99,6 +126,15 @@ body {
 	border: 2px solid $white-color;
 	border-radius: 3px;
 	box-sizing: border-box;
+
+	&::placeholder {
+		color: $white-color;
+	}
+
+	@include tablet {
+		margin: 0 0 24px;
+		width: 100%;
+	}
 }
 
 .border-top {

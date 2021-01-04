@@ -1,6 +1,5 @@
 .pricing {
 
-
     @for $i from 1 through 3 {
         .price-item:nth-of-type(#{$i}) {
             background-image: url(../images/subscribe_#{$i}.png);
@@ -11,18 +10,15 @@
         padding: 24px 22px 66px;
         background-repeat: no-repeat;
         background-size: cover;
+        box-sizing: border-box;
+        border-radius: 16px;
+
+        @include tablet {
+            margin: 0 0 50px;
+        }
+
+        @include mobile {
+            padding: 16px 24px 66px;
+        }
     }
-
-    // .pricing-item {
-    //     background-image: url(../images/subscribe_1.png);
-    // }
-
-    // .pricing-second-item {
-    //     background-image: url(../images/subscribe_2.png);
-    // }
-
-    // .pricing-third-item {
-    //     background-image: url(../images/subscribe_3.png);
-    // }
-
 }
