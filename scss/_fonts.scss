@@ -49,11 +49,17 @@
 .text-size-30 {
     font-size: 30px;
     line-height: 45px;
+    font-weight: normal;
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 27px;
+    }
 }
 
 .text-size-32 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .text-size-64 {
@@ -73,8 +79,16 @@
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .color-white {
     color: $white-color;
+}
+
+.color-gray {
+    color: $gray-color;
 }
 
 .color-orange {

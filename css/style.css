@@ -69,64 +69,6 @@ body {
   width: 100%;
 }
 
-.display-inline-block {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.display-flex-mobile-only {
-  display: flex;
-}
-
-@media (max-width: 414px) {
-  .display-flex-mobile-only {
-    flex-direction: column;
-  }
-}
-
-.display-flex-adaptive {
-  display: flex;
-}
-
-@media (max-width: 990px) {
-  .display-flex-adaptive {
-    flex-direction: column;
-  }
-}
-
-.justify-content-space-between {
-  justify-content: space-between;
-}
-
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
-.col-2-adaptive {
-  width: calc(50% - 25px);
-}
-
-@media (max-width: 990px) {
-  .col-2-adaptive {
-    width: 100%;
-  }
-}
-
-.col-3-adaptive {
-  width: calc(33% - 48px);
-}
-
-@media (max-width: 990px) {
-  .col-3-adaptive {
-    width: 100%;
-  }
-}
-
 .input {
   background-color: transparent;
   padding: 16px 24px;
@@ -210,11 +152,19 @@ body {
 .text-size-30 {
   font-size: 30px;
   line-height: 45px;
+  font-weight: normal;
+}
+
+@media (max-width: 414px) {
+  .text-size-30 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .text-size-32 {
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .text-size-64 {
@@ -234,8 +184,16 @@ body {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .color-white {
   color: #FFF;
+}
+
+.color-gray {
+  color: #E0E0E0;
 }
 
 .color-orange {
@@ -256,6 +214,11 @@ body {
 
 .padding-top-100 {
   padding-top: 100px;
+}
+
+.padding-vertical-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .padding-vertical-100 {
@@ -297,6 +260,69 @@ body {
 
 .margin-right-88 {
   margin-right: 88px;
+}
+
+.display-inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display-flex-mobile-only {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 414px) {
+  .display-flex-mobile-only {
+    flex-direction: column;
+  }
+}
+
+.display-flex-adaptive {
+  display: flex;
+}
+
+@media (max-width: 990px) {
+  .display-flex-adaptive {
+    flex-direction: column;
+  }
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.col-2-adaptive {
+  width: calc(50% - 25px);
+}
+
+@media (max-width: 990px) {
+  .col-2-adaptive {
+    width: 100%;
+  }
+}
+
+.col-3-adaptive {
+  width: calc(33% - 48px);
+}
+
+@media (max-width: 990px) {
+  .col-3-adaptive {
+    width: 100%;
+  }
 }
 
 .transparent {
