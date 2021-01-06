@@ -36,6 +36,16 @@
     line-height: 45px;
 }
 
+.header-level-four {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+
+    @include mobile {
+        line-height: 24px;
+    }
+}
+
 .text-small {
     font-size: 13px;
     line-height: 19px;
