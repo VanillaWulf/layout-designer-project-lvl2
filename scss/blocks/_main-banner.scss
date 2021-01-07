@@ -5,8 +5,10 @@
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
     box-sizing: border-box;
+    background-size: cover;
 
     @include mobile {
+        background-position: -700px;
         min-height: 862px;
         padding: 250px 20px 0 20px;
     }
@@ -22,7 +24,7 @@
 }
 
 .main-banner-artist {
-    padding-top: 250px;
+    padding: 250px 120px 0 120px;
     width: 100%;
     min-height: 713px;
     background-image: url('../images/Morten Harket.png');
@@ -30,4 +32,10 @@
     box-sizing: border-box;
     background-size: cover;
     background-position: -500px;
+
+    @include mobile {
+        background-position: -1100px;
+        min-height: 730px;
+        padding: 225px 20px 0 20px;
+    }
 }

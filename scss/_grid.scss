@@ -65,3 +65,11 @@
 		order: -1;
 	}
 }
+
+.display-block-tablet-only {
+	display: none; 
+
+	@include tablet {
+		display: block;
+	}
+}

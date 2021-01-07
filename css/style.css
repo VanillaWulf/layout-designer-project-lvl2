@@ -84,7 +84,6 @@ body {
 
 @media (max-width: 1100px) {
   .input {
-    margin: 0 0 24px;
     width: 100%;
   }
 }
@@ -330,6 +329,12 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  .margin-bottom-mobile-24 {
+    margin-bottom: 24px;
+  }
+}
+
 @media (max-width: 1100px) {
   .margin-right-mobile-50 {
     margin-right: 50px;
@@ -342,12 +347,6 @@ body {
 
 .margin-bottom-48 {
   margin-bottom: 48px;
-}
-
-@media (max-width: 1100px) {
-  .margin-bottom-mobile-50 {
-    margin-bottom: 50px;
-  }
 }
 
 .margin-bottom-64 {
@@ -454,13 +453,14 @@ body {
   }
 }
 
-.flex-flow {
-  flex-flow: row wrap;
+.display-block-tablet-only {
+  display: none;
 }
 
-.flex-flow::after {
-  content: "";
-  flex: auto;
+@media (max-width: 1100px) {
+  .display-block-tablet-only {
+    display: block;
+  }
 }
 
 .header {
@@ -505,10 +505,12 @@ body {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
+  background-size: cover;
 }
 
 @media (max-width: 414px) {
   .main-banner {
+    background-position: -700px;
     min-height: 862px;
     padding: 250px 20px 0 20px;
   }
@@ -526,7 +528,7 @@ body {
 }
 
 .main-banner-artist {
-  padding-top: 250px;
+  padding: 250px 120px 0 120px;
   width: 100%;
   min-height: 713px;
   background-image: url("../images/Morten Harket.png");
@@ -534,6 +536,14 @@ body {
   box-sizing: border-box;
   background-size: cover;
   background-position: -500px;
+}
+
+@media (max-width: 414px) {
+  .main-banner-artist {
+    background-position: -1100px;
+    min-height: 730px;
+    padding: 225px 20px 0 20px;
+  }
 }
 
 .pricing .price-item:nth-of-type(1) {

@@ -20,6 +20,12 @@
     }
 }
 
+.margin-bottom-mobile-24 {
+    @include mobile {
+        margin-bottom: 24px;
+    }
+}
+
 .margin-right-mobile-50 {
     @include tablet {
         margin-right: 50px;
