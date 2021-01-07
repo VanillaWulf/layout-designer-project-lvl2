@@ -65,12 +65,3 @@
 		order: -1;
 	}
 }
-
-.flex-flow {
-	flex-flow: row wrap;
-}
-
-.flex-flow::after {
-	content: "";
-	flex: auto;
-}
