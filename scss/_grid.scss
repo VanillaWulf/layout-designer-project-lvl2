@@ -9,9 +9,9 @@
 }
 
 .display-flex-mobile-only {
-    display: flex;
-    flex-wrap: wrap;
-	
+	display: flex;
+	flex-wrap: wrap;
+
 	@include mobile {
 		flex-direction: column;
 	}
@@ -19,7 +19,7 @@
 
 .display-flex-adaptive {
 	display: flex;
-	
+
 	@include tablet {
 		flex-direction: column;
 	}
@@ -29,12 +29,19 @@
 	justify-content: space-between;
 }
 
-.align-items-center {
-	align-items: center;
+.center-adaptive {
+	@include tablet {
+		justify-content: center;
+	}
 }
 
 .flex-grow-1 {
 	flex-grow: 1;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
 }
 
 .col-2-adaptive {
@@ -53,12 +60,17 @@
 	}
 }
 
-.col-4-adaptive {
-	width: calc(25% - 50px);
-}
-
 .order-mobile {
 	@include tablet {
 		order: -1;
 	}
+}
+
+.flex-flow {
+	flex-flow: row wrap;
+}
+
+.flex-flow::after {
+	content: "";
+	flex: auto;
 }
