@@ -44,6 +44,14 @@
 	align-items: center;
 }
 
+.flex-align-items-center-desktop {
+	align-items: center;
+}
+
+.align-self-center {
+	align-self: center;
+}
+
 .col-2-adaptive {
 	width: calc(50% - 25px);
 
@@ -53,7 +61,7 @@
 }
 
 .col-3-adaptive {
-	width: calc(33% - 48px);
+	width: calc(33% - 30px);
 
 	@include tablet {
 		width: 100%;
@@ -72,4 +80,8 @@
 	@include tablet {
 		display: block;
 	}
+}
+
+.full-height {
+	height: 100%;
 }

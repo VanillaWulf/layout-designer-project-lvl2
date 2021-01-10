@@ -8,20 +8,19 @@
     <title>Главная</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header uppercase color-white">
         <div class="display-flex-adaptive container">
-            <div class="display-flex">
+            <div class="display-flex flex-align-items-center">
                 <img src="./images/logo.svg" alt="лого" class="header__img" width="24" height="24">
-                <p class="text-size-16 margin-right-88">Music Box</p>
+                <p class="text-size-11 margin-right-90">Music Box</p>
             </div>
-            <div class="display-flex-adaptive justify-content-space-between flex-grow-1">
+            <div class="display-flex-adaptive justify-content-space-between flex-grow-1 text-size-11">
                 <nav>
-                    <ul class="header__navigation-list display-flex-mobile-only">
+                    <ul class="header__navigation-list display-flex-mobile-only flex-align-items-center full-height">
                         <li class="margin-right-24"><a href="#" class="color-white">Главная</a></li>
                         <li class="margin-right-24"><a href="#" class="color-white">Каталог</a></li>
                         <li class="margin-right-24"><a href="#" class="color-white">Исполнители</a>
@@ -38,8 +37,8 @@
     </header>
     <main>
         <section class="main-banner text-center" id="page-description">
-            <h1 class="header-text">Онлайн музыка где угодно</h1>
-            <h2 class="header-level-two">Без ограничений</h2>
+            <h1 class="header-text uppercase">Онлайн музыка где угодно</h1>
+            <h2 class="header-level-two uppercase margin-bottom-32">Без ограничений</h2>
             <p class="margin-bottom-16">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте
                 мир
                 музыки</p>
@@ -53,10 +52,10 @@
         </section>
         <section class="pricing padding-top-100 container text-center" id="page-pricing">
             <h2 class="header-level-two uppercase margin-bottom-48">Формы подписки</h2>
-            <ul class="display-flex-adaptive justify-content-space-between margin-bottom-39">
+            <ul class="display-flex-adaptive justify-content-space-between margin-bottom-40">
                 <li class="col-3-adaptive price-item">
                     <h3 class="header-level-three uppercase text-center margin-bottom-180">Бесплатная</h3>
-                    <p class="text-size-64 uppercase margin-bottom-24">0 <span
+                    <p class="text-size-64 uppercase margin-bottom-27">0 <span
                             class="text-size-32 vertical-align-super">руб</span></p>
                     <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
                     <p class="text-small">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции
@@ -65,7 +64,7 @@
                 </li>
                 <li class="col-3-adaptive price-item">
                     <h3 class="header-level-three uppercase margin-bottom-180">Стандартная</h3>
-                    <p class="text-size-64 uppercase margin-bottom-24">250 <span
+                    <p class="text-size-64 uppercase margin-bottom-27">250 <span
                             class="text-size-32 vertical-align-super">руб</span></p>
                     <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
                     <p class="text-small">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции
@@ -74,7 +73,7 @@
                 </li>
                 <li class="col-3-adaptive price-item">
                     <h3 class="header-level-three uppercase margin-bottom-180">Премиум</h3>
-                    <p class="text-size-64 uppercase margin-bottom-24">500 <span
+                    <p class="text-size-64 uppercase margin-bottom-27">500 <span
                             class="text-size-32 vertical-align-super">руб</span></p>
                     <button class="button white-button width-100 margin-bottom-64" type="button">Оформить</button>
                     <p class="text-small">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в
@@ -88,45 +87,45 @@
         <section class="padding-top-100 container" id="page-news">
             <h2 class="header-level-two uppercase margin-bottom-48 text-center">Последние новости</h2>
             <ul>
-                <li class="display-flex-adaptive justify-content-space-between margin-bottom-64">
-                    <img src="./images/Music-to-Be-Murdered-By.png" alt="music to be murdered"
-                        class="col-2-adaptive">
+                <li class="display-flex-adaptive justify-content-space-between margin-bottom-63">
+                    <img src="./images/Music-to-Be-Murdered-By.png" alt="music to be murdered" height="286" width="575"
+                        class="col-2-adaptive img-adaptive">
                     <div class="col-2-adaptive">
-                        <h3 class="text-size-30 margin-bottom-24">Music to Be Murdered By</h3>
-                        <p class="margin-bottom-48">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем
+                        <h3 class="text-size-30 margin-bottom-adaptive-30">Music to Be Murdered By</h3>
+                        <p class="margin-bottom-24">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем
                             сервисе. На альбоме вас ждёт
                             20
                             новых треков.</p>
                         <div class="display-flex margin-bottom-48">
                             <img src="./images/avatar.png" class="margin-right-16" width="19" height="19" alt="avatar">
-                            <p class="uppercase color-orange margin-right-16">music box</p>
-                            <time datetime="2020-01-17">17/01/2020</time>
+                            <p class="uppercase color-orange margin-right-16 text-small">music box</p>
+                            <time class="text-small" datetime="2020-01-17">17/01/2020</time>
                         </div>
-                        <a href="#" class="button dark-gray-button display-inline-block padding-horisontal-30">К
+                        <a href="#" class="button dark-gray-button display-inline-block padding-horisontal-30 padding-vertical-13 text-small">К
                             альбому</a>
                     </div>
                 </li>
                 <li class="display-flex-adaptive justify-content-space-between">
                     <div class="col-2-adaptive">
-                        <h3 class="text-size-30 margin-bottom-24">Ordinary Man</h3>
-                        <p class="margin-bottom-48">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом
+                        <h3 class="text-size-30 margin-bottom-adaptive-30">Ordinary Man</h3>
+                        <p class="margin-bottom-24">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом
                             Ordinary
                             Man. Слушайте в числе первых на Music Box</p>
                         <div class="display-flex margin-bottom-48">
-                            <img src="./images/avatar.png" class="margin-right-16" width="19" height="19" alt="avatar">>
-                            <p class="uppercase color-orange margin-right-16">music box</p>
-                            <time datetime="2020-01-17">17/01/2020</time>
+                            <img src="./images/avatar.png" class="margin-right-16" width="19" height="19" alt="avatar">
+                            <p class="uppercase color-orange margin-right-16 text-small">music box</p>
+                            <time class="text-small" datetime="2020-01-17">17/01/2020</time>
                         </div>
-                        <a href="#" class="button dark-gray-button display-inline-block padding-horisontal-30">К
+                        <a href="#" class="button dark-gray-button display-inline-block padding-horisontal-30 padding-vertical-13 text-small">К
                             альбому</a>
                     </div>
                     <img src="./images/Ordinary-Man.png" alt="ordinary man"
-                        class="col-2-adaptive order-mobile margin-bottom-mobile-50">
+                        class="col-2-adaptive order-mobile margin-bottom-mobile-50 img-adaptive" height="286" width="575">
                 </li>
             </ul>
         </section>
-        <section class="padding-vertical-100 container" id="page-app">
-            <h2 class="header-level-two uppercase padding-bottom-48 text-center">Мобильное приложение</h2>
+        <section class="padding-top-100 margin-bottom-100 container" id="page-app">
+            <h2 class="header-level-two uppercase margin-bottom-48 text-center">Мобильное приложение</h2>
             <div class="display-flex-adaptive justify-content-space-between">
                 <div class="col-2-adaptive">
                     <p class="margin-bottom-16">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку
@@ -139,7 +138,9 @@
                         музыку даже без интернета.</p>
                     <button class="button red-button padding-horisontal-40 round">Скачать</button>
                 </div>
-                <img src="images/iphone.png" class="col-2-adaptive order-mobile" alt="iphone">
+                <div class="col-2-adaptive order-mobile display-flex flex-center">
+                <img src="images/iphone.png" alt="iphone" width="333">
+                </div>
             </div>
         </section>
     </main>
@@ -147,8 +148,8 @@
         <div class="container">
             <nav class="footer__navigation">
                 <ul class="display-flex-adaptive justify-content-space-between">
-                    <li class="margin-bottom-mobile-30">
-                        <h2 class="margin-bottom-16">О нас</h2>
+                    <li class="margin-bottom-tablet-33">
+                        <h2 class="margin-bottom-16 uppercase">О нас</h2>
                         <ul>
                             <li><a class="color-white" href="#">История компании</a></li>
                             <li><a class="color-white" href="#">Карьера</a></li>
@@ -156,8 +157,8 @@
                             <li><a class="color-white" href="#">Пресса</a></li>
                         </ul>
                     </li>
-                    <li class="margin-bottom-mobile-30">
-                        <h2 class="margin-bottom-16">Поддержка</h2>
+                    <li class="margin-bottom-tablet-33">
+                        <h2 class="margin-bottom-16 uppercase">Поддержка</h2>
                         <ul>
                             <li><a class="color-white" href="#">База знаний</a></li>
                             <li><a class="color-white" href="#">Тарифы</a></li>
@@ -165,8 +166,8 @@
                             <li><a class="color-white" href="#">Условия использования</a></li>
                         </ul>
                     </li>
-                    <li class="margin-bottom-mobile-30">
-                        <h2 class="margin-bottom-16">Контакты</h2>
+                    <li class="margin-bottom-tablet-33">
+                        <h2 class="margin-bottom-16 uppercase">Контакты</h2>
                         <ul>
                             <li><a class="color-white" href="mailto:hello@music.box">hello@music.box</a></li>
                             <li><a class="color-white" href="#">Russia, Moscow. Music Box studio</a></li>
@@ -174,7 +175,7 @@
                         </ul>
                     </li>
                     <li>
-                        <h2 class="margin-bottom-16">Подписывайтесь</h2>
+                        <h2 class="margin-bottom-16 uppercase">Подписывайтесь</h2>
                         <ul class="display-flex">
                             <li class="margin-right-24"><a class="color-white" href="#" aria-label="google+"><img
                                         src="./images/Google+.png" alt="Google+"></a>
@@ -194,13 +195,13 @@
             </nav>
         </div>
         <div class="border-top">
-            <nav class="container padding-top-40 padding-bottom-48">
+            <nav class="container padding-top-40 padding-bottom-50">
                 <ul class="display-flex-adaptive">
-                    <li><a href="#" class="color-white">Магазин</a></li>
-                    <li><a href="#" class="color-white">Обслуживание</a></li>
-                    <li><a href="#" class="color-white">Блог</a></li>
-                    <li><a href="#" class="color-white">Поддержка</a></li>
-                    <li><a href="#" class="color-white">Контакты</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Магазин</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Обслуживание</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Блог</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Поддержка</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Контакты</a></li>
                 </ul>
             </nav>
         </div>

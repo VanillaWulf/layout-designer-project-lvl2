@@ -1,20 +1,21 @@
 .main-banner {
     padding: 200px 0 0 0;
     width: 100%;
-    min-height: 713px;
+    min-height: 751px;
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
     box-sizing: border-box;
+    background-position: -110px;
     background-size: cover;
 
     @include mobile {
         background-position: -700px;
-        min-height: 862px;
+        min-height: 851px;
         padding: 250px 20px 0 20px;
     }
 
     .main-banner__form {
-        width: 47%;
+        width: 40%;
         margin: 0 auto;
 
         @include mobile {
@@ -26,8 +27,8 @@
 .main-banner-artist {
     padding: 250px 120px 0 120px;
     width: 100%;
-    min-height: 713px;
-    background-image: url('../images/Morten Harket.png');
+    min-height: 714px;
+    background-image: url('../images/Morten-Harket.png');
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-size: cover;

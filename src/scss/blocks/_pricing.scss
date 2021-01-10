@@ -7,18 +7,23 @@
     }
 
     .price-item {
-        padding: 24px 22px 66px;
+        padding: 20px 22px 66px;
         background-repeat: no-repeat;
         background-size: cover;
         box-sizing: border-box;
         border-radius: 16px;
 
         @include tablet {
-            margin: 0 0 50px;
+            margin: 0 0 77px;
+
+            &:last-child {
+                margin: 0;
+            }
         }
 
         @include mobile {
-            padding: 16px 24px 66px;
+            padding: 16px 24px 72px;
+            margin: 0 0 50px;
         }
     }
 }

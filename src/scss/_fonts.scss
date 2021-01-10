@@ -34,6 +34,11 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 45px;
+
+    @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .header-level-four {
@@ -49,6 +54,11 @@
 .text-small {
     font-size: 13px;
     line-height: 19px;
+}
+
+.text-size-11 {
+    font-size: 11px;
+    line-height: 13px;
 }
 
 .text-size-16 {
@@ -68,8 +78,8 @@
 }
 
 .text-size-32 {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 32px;
+    line-height: 48px;
 }
 
 .text-size-64 {

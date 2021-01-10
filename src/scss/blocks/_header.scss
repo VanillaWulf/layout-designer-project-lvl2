@@ -16,6 +16,11 @@
         background-color: $dark-color;
         border-radius: 50px;
         border: none;
+        width: 248px;
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
 
         @include mobile {
             width: 100%;
