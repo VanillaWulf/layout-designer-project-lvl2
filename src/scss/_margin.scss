@@ -24,6 +24,7 @@
 
 .margin-bottom-adaptive-30 {
     margin-bottom: 30px;
+
     @include tablet {
         margin-bottom: 16px;
     }
@@ -37,8 +38,19 @@
     margin-bottom: 40px
 }
 
+.margin-bottom-50 {
+    margin-bottom: 50px
+}
+
 .margin-bottom-63 {
     margin-bottom: 63px;
+}
+
+.margin-bottom-adaptive-65 {
+    margin-bottom: 65px;
+    @include tablet {
+        margin-bottom: 64px;
+    }
 }
 
 .margin-bottom-100 {
@@ -73,7 +85,7 @@
     @include tablet {
         margin-right: 50px;
     }
-} 
+}
 
 .margin-bottom-39 {
     margin-bottom: 39px;

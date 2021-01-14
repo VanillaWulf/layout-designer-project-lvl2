@@ -411,8 +411,22 @@ body {
   margin-bottom: 40px;
 }
 
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .margin-bottom-63 {
   margin-bottom: 63px;
+}
+
+.margin-bottom-adaptive-65 {
+  margin-bottom: 65px;
+}
+
+@media (max-width: 1100px) {
+  .margin-bottom-adaptive-65 {
+    margin-bottom: 64px;
+  }
 }
 
 .margin-bottom-100 {
