@@ -48,6 +48,7 @@
 
 .margin-bottom-adaptive-65 {
     margin-bottom: 65px;
+    
     @include tablet {
         margin-bottom: 64px;
     }
