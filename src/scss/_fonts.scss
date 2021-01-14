@@ -1,3 +1,20 @@
+@font-face {
+    font-weight: normal;
+    font-family: "roboto";
+    font-style: normal;
+    src: url("../fonts/roboto-regular.woff") format("woff"),
+        url("../fonts/roboto-regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "roboto";
+    font-style: normal;
+    src: url("../fonts/roboto-bold.woff") format("woff"),
+        url("../fonts/roboto-bold.woff2") format("woff2")
+}
+
+
 .header-text {
     font-size: 60px;
     font-weight: 700;
