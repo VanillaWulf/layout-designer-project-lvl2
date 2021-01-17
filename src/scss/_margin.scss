@@ -2,8 +2,20 @@
     margin-bottom: 10px;
 }
 
-.margin-bottom-12 {
+.margin-bottom-adaptive-12 {
     margin-bottom: 12px;
+
+    @include tablet {
+        margin-bottom: 15px;
+    }
+}
+
+.margin-bottom-adaptive-11 {
+    margin-bottom: 11px;
+
+    @include tablet {
+        margin-bottom: 16px;
+    }
 }
 
 .margin-bottom-16 {

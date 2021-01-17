@@ -373,8 +373,24 @@ body {
   margin-bottom: 10px;
 }
 
-.margin-bottom-12 {
+.margin-bottom-adaptive-12 {
   margin-bottom: 12px;
+}
+
+@media (max-width: 1100px) {
+  .margin-bottom-adaptive-12 {
+    margin-bottom: 15px;
+  }
+}
+
+.margin-bottom-adaptive-11 {
+  margin-bottom: 11px;
+}
+
+@media (max-width: 1100px) {
+  .margin-bottom-adaptive-11 {
+    margin-bottom: 16px;
+  }
 }
 
 .margin-bottom-16 {
