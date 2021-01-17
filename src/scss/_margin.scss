@@ -1,3 +1,9 @@
+.margin-bottom-adaptive-1 {
+    @include tablet {
+        margin-bottom: 1px;
+    }
+}
+
 .margin-bottom-10 {
     margin-bottom: 10px;
 }
