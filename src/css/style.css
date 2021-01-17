@@ -676,8 +676,14 @@ body {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
-  background-position: -110px;
+  background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 1439px) {
+  .main-banner {
+    background-position: -110px;
+  }
 }
 
 @media (max-width: 414px) {
