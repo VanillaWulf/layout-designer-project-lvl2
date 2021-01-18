@@ -208,7 +208,6 @@ body {
 
 .text-size-11 {
   font-size: 11px;
-  line-height: 13px;
 }
 
 .text-size-16 {
@@ -276,6 +275,10 @@ body {
   padding: 21px 0;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button-main-banner {
+  padding: 21px 31px;
 }
 
 .white-button {
@@ -585,8 +588,20 @@ body {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .align-self-center {
   align-self: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .col-2-adaptive {
@@ -713,7 +728,13 @@ body {
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-size: cover;
-  background-position: -500px;
+  background-position: center;
+}
+
+@media (max-width: 1439px) {
+  .main-banner-artist {
+    background-position: -500px;
+  }
 }
 
 @media (max-width: 414px) {

@@ -12,13 +12,13 @@
 <body>
     <header class="header uppercase color-white">
         <div class="display-flex-adaptive container">
-            <a href="index.html" class="display-flex">
+            <div class="display-flex flex-align-items-center">
                 <img src="./images/logo.svg" alt="лого" class="header__img" width="24" height="24">
-                <p class="color-white text-size-16 margin-right-88">Music Box</p>
-            </a>
-            <div class="display-flex-adaptive justify-content-space-between flex-grow-1">
+                <p class="text-size-11 margin-right-90">Music Box</p>
+            </div>
+            <div class="display-flex-adaptive justify-content-space-between flex-grow-1 text-size-11">
                 <nav>
-                    <ul class="header__navigation-list display-flex-mobile-only">
+                    <ul class="header__navigation-list display-flex-mobile-only flex-align-items-center full-height">
                         <li class="margin-right-24"><a href="#" class="color-white">Главная</a></li>
                         <li class="margin-right-24"><a href="#" class="color-white">Каталог</a></li>
                         <li class="margin-right-24"><a href="#" class="color-white">Исполнители</a>
@@ -35,69 +35,76 @@
     </header>
     <main>
         <section class="main-banner-artist" id="page-description">
-            <h1 class="header-text margin-bottom-16 uppercase">Morten Harket</h1>
-            <p class="margin-bottom-48">24 875 поклонников</p>
-            <div class="display-flex">
-                <button class="button purple-button margin-right-16 uppercase min-width-200 display-flex flex-center margin-bottom-tablet-24">
-                    <img class="margin-right-16" src="./images/play-button.svg" width="20" height="20" alt="play">
-                    <span>микс</span>
-                </button>
-                <button class="button red-button uppercase min-width-200 display-flex flex-center">
-                    <img src="./images/heart.svg" width="20" height="20" class="margin-right-16" alt="heart">
-                    <span>в избранное</span>
-                </button>
+            <div class="container">
+                <h1 class="header-text margin-bottom-16 uppercase">Morten Harket</h1>
+                <p class="margin-bottom-48">24 875 поклонников</p>
+                <div class="display-flex">
+                    <button
+                        class="button purple-button button-main-banner margin-right-24 uppercase min-width-200 display-flex margin-bottom-tablet-24 align-items-center">
+                        <img class="margin-right-16" src="./images/play-button.svg" width="20" height="20" alt="play">
+                        <span>микс</span>
+                    </button>
+                    <button
+                        class="button red-button button-main-banner uppercase min-width-200 display-flex align-items-center">
+                        <img src="./images/heart.svg" width="20" height="20" class="margin-right-16" alt="heart">
+                        <span>в избранное</span>
+                    </button>
+                </div>
             </div>
         </section>
         <section id="page-popular-track" class="padding-top-100 container">
             <h2 class="header-level-two uppercase margin-bottom-48">Популярные треки</h2>
             <ul class="display-flex-mobile-only justify-content-space-between">
-                <li class="col-2-adaptive display-flex margin-bottom-25">
+                <li class="col-2-adaptive display-flex margin-bottom-25 align-items-center">
                     <img src="./images/Wild-Seed.png" alt="wild seed" width="55" height="55" class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">Spanish Step</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">4:07</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">4:07</p>
                 </li>
-                <li class="col-2-adaptive display-flex margin-bottom-25">
-                    <img src="./images/Letter-from-Egypt.png" alt="Letter from Egypt" width="55" height="55" class="margin-right-15">
+                <li class="col-2-adaptive display-flex margin-bottom-25 align-items-center">
+                    <img src="./images/Letter-from-Egypt.png" alt="Letter from Egypt" width="55" height="55"
+                        class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">With You - With Me</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">3:48</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">3:48</p>
                 </li>
-                <li class="col-2-adaptive display-flex margin-bottom-25">
+                <li class="col-2-adaptive display-flex margin-bottom-25 align-items-center">
                     <img src="./images/Brother.png" alt="brother" width="55" height="55" class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">Brother</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">5:05</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">5:05</p>
                 </li>
-                <li class="col-2-adaptive display-flex margin-bottom-25">
+                <li class="col-2-adaptive display-flex margin-bottom-25 align-items-center">
                     <img src="./images/Wild-Seed.png" alt="wild seed" width="55" height="55" class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">Spanish Step</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">4:24</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">4:24</p>
                 </li>
-                <li class="col-2-adaptive display-flex margin-bottom-tablet-25">
-                    <img src="./images/Letter-from-Egypt.png" alt="Letter from Egypt" width="55" height="55" class="margin-right-15">
+                <li class="col-2-adaptive display-flex margin-bottom-tablet-25 align-items-center">
+                    <img src="./images/Letter-from-Egypt.png" alt="Letter from Egypt" width="55" height="55"
+                        class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">Darkspace</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">3:45</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">3:45</p>
                 </li>
-                <li class="col-2-adaptive display-flex">
-                    <img src="./images/Out-of-My-Hands.png" alt="Out of My Hands" width="55" height="55" class="margin-right-15">
+                <li class="col-2-adaptive display-flex align-items-center">
+                    <img src="./images/Out-of-My-Hands.png" alt="Out of My Hands" width="55" height="55"
+                        class="margin-right-15">
                     <div>
                         <h2 class="text-small uppercase">Burn Money Burn</h2>
                         <p class="text-small color-gray">Morten Harket</p>
                     </div>
-                    <p class="text-small color-gray flex-grow-1 text-right align-self-center">3:52</p>
+                    <p class="text-small color-gray flex-grow-1 text-right">3:52</p>
                 </li>
             </ul>
         </section>
@@ -146,7 +153,8 @@
             <h2 class="header-level-two uppercase margin-bottom-48">Похожие исполнители</h2>
             <ul class="center-adaptive display-flex">
                 <li class="margin-bottom-25 margin-right-50 text-center">
-                    <img src="./images/A-ha.png" alt="aha" width="250" height="250" class="margin-bottom-adaptive-12 image">
+                    <img src="./images/A-ha.png" alt="aha" width="250" height="250"
+                        class="margin-bottom-adaptive-12 image">
                     <h3 class="header-level-four">A-Ha</h3>
                     <p class="color-gray">417 086 <br class="display-block-tablet-only"> поклонников</p>
                 </li>
@@ -169,7 +177,8 @@
                     <p class="color-gray">26 857 <br class="display-block-tablet-only">поклонников</p>
                 </li>
                 <li class="margin-right-50 margin-bottom-adaptive-25 text-center">
-                    <img src="./images/Keane.png" alt="Keane" width="250" height="250" class="margin-bottom-adaptive-12 image">
+                    <img src="./images/Keane.png" alt="Keane" width="250" height="250"
+                        class="margin-bottom-adaptive-12 image">
                     <h3 class="header-level-four">Keane</h3>
                     <p class="color-gray">1 704 358 <br class="display-block-tablet-only">поклонников</p>
                 </li>
@@ -248,10 +257,13 @@
             <nav class="container padding-top-40 padding-bottom-50">
                 <ul class="display-flex-adaptive">
                     <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Магазин</a></li>
-                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Обслуживание</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Обслуживание</a>
+                    </li>
                     <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Блог</a></li>
-                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Поддержка</a></li>
-                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Контакты</a></li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Поддержка</a>
+                    </li>
+                    <li class="margin-right-15 margin-bottom-mobile-12"><a href="#" class="color-white">Контакты</a>
+                    </li>
                 </ul>
             </nav>
         </div>

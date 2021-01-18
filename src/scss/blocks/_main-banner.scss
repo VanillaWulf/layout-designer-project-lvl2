@@ -36,7 +36,12 @@
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-size: cover;
-    background-position: -500px;
+    background-position: center;
+
+    @include desktop {
+        background-position: -500px;
+    }
+
 
     @include mobile {
         background-position: -1100px;
