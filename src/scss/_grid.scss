@@ -80,6 +80,14 @@
 	}
 }
 
+.col-4-adaptive {
+	width: 23%;
+	
+	@include tablet {
+		width: 100%;
+	}
+}
+
 .order-mobile {
 	@include tablet {
 		order: -1;
